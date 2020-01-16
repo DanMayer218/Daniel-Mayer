@@ -2,3 +2,38 @@
   margin-top: 10px;
   opacity: 0.8;
 }
+
+#cardrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+#linka {
+  background-image: url(../images/astronot_copy.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 30%;
+}
+
+#linkb {
+  background-image: url(../images/Prism.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 30%;
+}
+
+#linkc {
+  background-image: url(../images/balducci.PNG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 30%;
+}
