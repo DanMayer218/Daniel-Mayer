@@ -5,11 +5,13 @@
 
 #cardrow {
   width: 100%;
+  height: 700px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-bottom: 50px;
+  padding-top: 10px;
+  margin-bottom: 100px;
 }
 
 #linka {
@@ -23,6 +25,7 @@
   width: 30%;
   font-family: "Jura", sans-serif;
   font-size: x-large;
+  box-shadow: 2px 4px 8px black;
 }
 
 #linkb {
@@ -36,6 +39,7 @@
   width: 30%;
   font-family: "Jura", sans-serif;
   font-size: x-large;
+  box-shadow: 2px 4px 8px black;
 }
 
 #linkc {
@@ -49,10 +53,11 @@
   width: 30%;
   font-family: "Jura", sans-serif;
   font-size: x-large;
+  box-shadow: 2px 4px 8px black;
 }
 
 .linkinfo {
-  height: 200px;
+  height: 250px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -60,10 +65,11 @@
   color: white;
   justify-content: center;
   text-align: center;
-  background-color: rgba(59, 59, 59, 0.63);
+  background-color: rgba(59, 59, 59, 0.808);
 }
 
 .linkhead {
   margin-bottom: 2px;
   color: white;
+  height: 20px;
 }
