@@ -17,16 +17,25 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  position: relative;
+  bottom: 10px;
+  height: 600px;
   width: 30%;
+  font-family: "Jura", sans-serif;
+  font-size: x-large;
 }
 
 #linkb {
   background-image: url(../images/Prism.png);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  position: relative;
+  bottom: 10px;
+  height: 600px;
   width: 30%;
+  font-family: "Jura", sans-serif;
+  font-size: x-large;
 }
 
 #linkc {
@@ -34,6 +43,27 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  position: relative;
+  bottom: 10px;
+  height: 600px;
   width: 30%;
+  font-family: "Jura", sans-serif;
+  font-size: x-large;
+}
+
+.linkinfo {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  align-content: bottom;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(59, 59, 59, 0.63);
+}
+
+.linkhead {
+  margin-bottom: 2px;
+  color: white;
 }
