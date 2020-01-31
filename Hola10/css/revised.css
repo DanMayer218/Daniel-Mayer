@@ -26,6 +26,7 @@
   font-family: "Jura", sans-serif;
   font-size: x-large;
   box-shadow: 2px 4px 8px black;
+  letter-spacing: 5px;
 }
 
 #linkb {
@@ -40,6 +41,7 @@
   font-family: "Jura", sans-serif;
   font-size: x-large;
   box-shadow: 2px 4px 8px black;
+  letter-spacing: 5px;
 }
 
 #linkc {
@@ -54,6 +56,7 @@
   font-family: "Jura", sans-serif;
   font-size: x-large;
   box-shadow: 2px 4px 8px black;
+  letter-spacing: 5px;
 }
 
 .linkinfo {
