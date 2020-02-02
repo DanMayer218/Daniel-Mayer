@@ -23,27 +23,23 @@
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/revised.css" />
-    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="gallery.css" />
 
-    <!-- slick carousel -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <link type="text/javascript" href="./js/slick.js" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-    <link type="text/javascript" href="coding.html" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- 
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -56,7 +52,10 @@
     </script>
   </head>
 
-  <body id="top" style="justify-content=center; align-content=center;">
+  <body
+    id="top"
+    style="padding-top: 120px;background-color: rgb(0, 0, 0);justify-content=center; align-content=center;"
+  >
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -67,66 +66,207 @@
       </div>
 
       <nav class="header-nav-wrap">
-        <ul class="header-nav">
+        <div>
+          <button
+            onclick="goBack()"
+            style="margin-top: 20px;margin-left: 30px;background-color: black; color: white; border: 1px solid rgb(58, 58, 58);"
+          >
+            Go Back
+          </button>
+        </div>
+        <!-- <ul class="header-nav">
           <li class="current">
             <a class="smoothscroll" href="index.html" title="home">Home</a>
           </li>
-        </ul>
+        </ul> -->
       </nav>
 
-      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+      <!-- <a class="header-menu-toggle" href="#0"><span>Menu</span></a> -->
     </header>
     <!-- end s-header -->
-    <div style="margin-top: 50px;">
-      <button
-        onclick="goBack()"
-        style="margin-top: 80px;margin-left: 30px;background-color: black; color: white; border: 1px solid rgb(58, 58, 58);"
-      >
-        Go Back
-      </button>
-    </div>
-    <div class="your-class">
-      <div><img src="images/design_image1/bickle.png" /></div>
-      <div><img src="images/design_image1/astronot.png" /></div>
-      <div><img src="images/design_image1/onthecorner.PNG" /></div>
-      <div><img src="images/design_image1/roboman.jpg" /></div>
-      <div><img src="images/design_image1/samurai_lg.png" /></div>
-      <div><img src="images/design_image1/skeletal.png" /></div>
-      <div><img src="images/design_image1/eye1_lg.png" /></div>
-      <div><img src="images/design_image1/family huddle.png" /></div>
-      <div><img src="images/design_image1/beachlovers.png" /></div>
-      <div><img src="images/design_image1/babyhead_lg.png" /></div>
-      <div><img src="images/design_image1/cityscape.png" /></div>
-      <div><img src="images/design_image1/Glowfish.png" /></div>
-      <div><img src="images/design_image1/kenny2_lg.png" /></div>
-      <div><img src="images/design_image1/multihead_lg.png" /></div>
-      <div><img src="images/design_image1/painterly_lg.png" /></div>
-      <div><img src="images/design_image1/rainbow bridge2.PNG" /></div>
-      <div><img src="images/design_image1/red_record_lgpng.png" /></div>
-      <div><img src="images/design_image1/sittingbymyself.png" /></div>
-      <div><img src="images/design_image1/spellbound.png" /></div>
-      <div><img src="images/design_image1/neighborgarage_lg.png" /></div>
-      <div><img src="images/design_image1/IMG_2370.PNG" /></div>
-      <div><img src="images/design_image1/gustonesque_lg.png" /></div>
-      <div><img src="images/design_image1/visitors 2.png" /></div>
-      <div><img src="images/design_image1/astronaut1_lg.png" /></div>
-      <div><img src="images/design_image1/citystreet2.png" /></div>
-      <div><img src="images/design_image1/citystreet1.png" /></div>
-    </div>
 
+    <div id="carodiv">
+      <div
+        class="carousel fade-carousel slide"
+        data-ride="carousel"
+        data-interval="4000"
+        id="bs-carousel"
+      >
+        <!-- Overlay -->
+        <!-- <div class="overlay"></div> -->
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+          <li data-target="#bs-carousel" data-slide-to="3"></li>
+          <li data-target="#bs-carousel" data-slide-to="4"></li>
+          <li data-target="#bs-carousel" data-slide-to="5"></li>
+          <li data-target="#bs-carousel" data-slide-to="6"></li>
+          <li data-target="#bs-carousel" data-slide-to="7"></li>
+          <li data-target="#bs-carousel" data-slide-to="8"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are creative</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are smart</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-4"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-5"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-6"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-7"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-8"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-9"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
     ></script>
+    <!-- Latest compiled and minified JavaScript -->
     <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".your-class").slick();
-      });
-    </script>
   </body>
 </html>

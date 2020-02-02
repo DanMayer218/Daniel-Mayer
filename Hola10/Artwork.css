@@ -9,10 +9,10 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel {
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 .fade-carousel .carousel-inner .item {
-  height: 100vh;
+  height: 80vh;
 }
 .fade-carousel .carousel-indicators > li {
   margin: 0 2px;
@@ -33,16 +33,18 @@ Image credits: unsplash.com
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: rgba(48, 47, 47, 0.87);
   z-index: 3;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.815);
   -webkit-transform: translate3d(-50%, -50%, 0);
   -moz-transform: translate3d(-50%, -50%, 0);
   -ms-transform: translate3d(-50%, -50%, 0);
   -o-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
+  border-radius: 25px;
 }
 .hero h1 {
   font-size: 6em;
@@ -101,7 +103,12 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7,
+.fade-carousel .slides .slide-8 {
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -114,8 +121,27 @@ Image credits: unsplash.com
   background-image: url(./images/codingall1/bootique.png);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(./images/codingall1/nodeyourcode.png);
-  background-size: contain;
+  background-image: url(./images/codingall1/nodeyourcode2.png);
+  background-size: cover;
+  background-position: center;
+}
+.fade-carousel .slides .slide-4 {
+  background-image: url(./images/codingall1/vacayscreen.png);
+}
+.fade-carousel .slides .slide-5 {
+  background-image: url(./images/codingall1/bootique.png);
+}
+.fade-carousel .slides .slide-6 {
+  background-image: url(./images/codingall1/PRISM.png);
+}
+.fade-carousel .slides .slide-7 {
+  background-image: url(./images/codingall1/bootique.png);
+}
+.fade-carousel .slides .slide-8 {
+  background-image: url(./images/codingall1/bootique.png);
+}
+.fade-carousel .slides .slide-9 {
+  background-image: url(./images/codingall1/bootique.png);
 }
 
 /********************************/
