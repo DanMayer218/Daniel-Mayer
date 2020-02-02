@@ -23,19 +23,37 @@
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/revised.css" />
+    <link rel="stylesheet" href="gallery.css" />
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </head>
 
-  <body id="top">
+  <body
+    id="top"
+    style="background-color: rgb(0, 0, 0);justify-content=center; align-content=center;"
+  >
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -46,134 +64,97 @@
       </div>
 
       <nav class="header-nav-wrap">
-        <ul class="header-nav">
+        <div>
+          <button
+            onclick="goBack()"
+            style="margin-top: 20px;margin-left: 30px;background-color: black; color: white; border: 1px solid rgb(58, 58, 58);"
+          >
+            Go Back
+          </button>
+        </div>
+        <!-- <ul class="header-nav">
           <li class="current">
-            <a class="smoothscroll" href="#home" title="home">Home</a>
+            <a class="smoothscroll" href="index.html" title="home">Home</a>
           </li>
-          <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-          <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-          <li><a class="smoothscroll" href="#blog" title="blog">Blog</a></li>
-          <li>
-            <a class="smoothscroll" href="#contact" title="contact">Contact</a>
-          </li>
-        </ul>
+        </ul> -->
       </nav>
 
-      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+      <!-- <a class="header-menu-toggle" href="#0"><span>Menu</span></a> -->
     </header>
     <!-- end s-header -->
 
-    <section>
-      <div class="container">
-        <div class="carousel">
-          <input type="radio" name="slides" checked="checked" id="slide-1" />
-          <input type="radio" name="slides" id="slide-2" />
-          <input type="radio" name="slides" id="slide-3" />
-          <input type="radio" name="slides" id="slide-4" />
-          <input type="radio" name="slides" id="slide-5" />
-          <input type="radio" name="slides" id="slide-6" />
-          <ul class="carousel__slides">
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1041/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Tim Marshall</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1043/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Christian Joudrey</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1044/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Steve Carter</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1045/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Aleksandra Boguslawska</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1049/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Rosan Harmens</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="carousel__slide">
-              <figure>
-                <div>
-                  <img src="https://picsum.photos/id/1052/800/450" alt="" />
-                </div>
-                <figcaption>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  <span class="credit">Photo: Annie Spratt</span>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-          <ul class="carousel__thumbnails">
-            <li>
-              <label for="slide-1"
-                ><img src="https://picsum.photos/id/1041/150/150" alt=""
-              /></label>
-            </li>
-            <li>
-              <label for="slide-2"
-                ><img src="https://picsum.photos/id/1043/150/150" alt=""
-              /></label>
-            </li>
-            <li>
-              <label for="slide-3"
-                ><img src="https://picsum.photos/id/1044/150/150" alt=""
-              /></label>
-            </li>
-            <li>
-              <label for="slide-4"
-                ><img src="https://picsum.photos/id/1045/150/150" alt=""
-              /></label>
-            </li>
-            <li>
-              <label for="slide-5"
-                ><img src="https://picsum.photos/id/1049/150/150" alt=""
-              /></label>
-            </li>
-            <li>
-              <label for="slide-6"
-                ><img src="https://picsum.photos/id/1052/150/150" alt=""
-              /></label>
-            </li>
-          </ul>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div>
+      <div
+        class="carousel fade-carousel slide"
+        data-ride="carousel"
+        data-interval="4000"
+        id="bs-carousel"
+      >
+        <!-- Overlay -->
+        <!-- <div class="overlay"></div> -->
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+          <li data-target="#bs-carousel" data-slide-to="3"></li>
+          <li data-target="#bs-carousel" data-slide-to="4"></li>
+          <li data-target="#bs-carousel" data-slide-to="5"></li>
+          <li data-target="#bs-carousel" data-slide-to="6"></li>
+          <li data-target="#bs-carousel" data-slide-to="7"></li>
+          <li data-target="#bs-carousel" data-slide-to="8"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are creative</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are smart</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
